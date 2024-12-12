@@ -1,22 +1,22 @@
 Feature: Users
   Scenario: Get All Users
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'users'
     When method GET
 
   Scenario: Get single user
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'users',2
     When method GET
 
 
   Scenario: delete single product
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'users',2
     When method DELETE
 
   Scenario: sort products
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'users',
     When method DELETE
 
@@ -49,7 +49,7 @@ Feature: Users
 
     }
     """
-     Given url 'https://dummyjson.com'
+     Given url mainUrl
      * path "users","add"
     * request userPayload
     When method POST
@@ -83,7 +83,7 @@ Feature: Users
 
     }
     """
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path "users",5
     * request updateUserPayload
     When method PUT
@@ -97,7 +97,7 @@ Feature: Users
       "age": 99
       }
     """
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path "users",5
     * request partialUpdateUserPayload
     When method PATCH

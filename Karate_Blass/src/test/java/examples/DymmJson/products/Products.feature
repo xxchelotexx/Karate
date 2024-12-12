@@ -1,34 +1,34 @@
 Feature: Users
   Scenario: Get All Products
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products'
     When method GET
 
   Scenario: Get single product
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products',2
     When method GET
 
 
   Scenario: delete single product
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products',2
     When method DELETE
 
   Scenario: delete single product
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products',2
     When method DELETE
 
   Scenario: sort products
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products'
     * path sortBy = 'price'
     * path orderBy = 'asc'
     When method get
 
   Scenario: search products
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products','search'
     * param q = 'kitchen'
     When method get
@@ -44,7 +44,7 @@ Feature: Users
         "stock": 30
       }
     """
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products','add'
     * request productPayload
     When method POST
@@ -62,7 +62,7 @@ Feature: Users
         "stock": 30
       }
     """
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products',2
     * request updateProductPayload
     When method PUT
@@ -75,7 +75,7 @@ Feature: Users
         "description": "prueba descripcion editado 2",
       }
     """
-    Given url 'https://dummyjson.com'
+    Given url mainUrl
     * path 'products',2
     * request partialUpdateProductPayload
     When method PATCH
