@@ -35,8 +35,8 @@ Feature: Users
     * def userPayload =
     """
     {
-      "fistName": "Marcelote",
-      "lastName": "Ruiz",
+      "fistName": "Chelo",
+      "lastName": "Vargas",
       "age": 20,
       "email": "marcelo@ruiz.com",
       "phone": "+591 76543021",
