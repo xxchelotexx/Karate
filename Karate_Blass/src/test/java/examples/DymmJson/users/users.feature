@@ -71,8 +71,8 @@ Feature: Users
     * def updateUserPayload =
     """
     {
-      "fistName": "Marcelo Edited",
-      "lastName": "Ruiz Edited",
+      "fistName": "Marcelo Edited 1",
+      "lastName": "Ruiz Edited 1",
       "age": 20,
       "email": "marcelo@ruiz.com",
       "phone": "+591 76543021",
