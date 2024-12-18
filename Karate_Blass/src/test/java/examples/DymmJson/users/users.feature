@@ -37,9 +37,9 @@ Feature: Users
     {
       "fistName": "Chelo",
       "lastName": "Vargas",
-      "age": 20,
-      "email": "marcelo@ruiz.com",
-      "phone": "+591 76543021",
+      "age": 21,
+      "email": "marcelo@ccorreo.com",
+      "phone": "+591-76543021",
       "role": "courses",
       "address": {
         "address": "calle 1",
