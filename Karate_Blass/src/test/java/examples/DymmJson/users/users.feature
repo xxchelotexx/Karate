@@ -107,8 +107,8 @@ Feature: Users
     * def partialUpdateUserPayload =
     """
     {
-      "fistName": "Marcelo Edited 2",
-      "lastName": "Ruiz Edited 2",
+      "fistName": "Marcelo Edited 3",
+      "lastName": "Ruiz Edited 3",
       "age": 99
       }
     """
