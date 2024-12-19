@@ -74,8 +74,8 @@ Feature: Users
       "fistName": "Marcelo Edited 1",
       "lastName": "Ruiz Edited 1",
       "age": 20,
-      "email": "marcelo@ruiz.com",
-      "phone": "+591 75290331",
+      "email": "marcelo@gmail.com",
+      "phone": "+59175290331",
       "role": "courses",
       "address": {
         "address": "calle X",
