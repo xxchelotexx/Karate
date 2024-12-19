@@ -83,8 +83,8 @@ Feature: Users
         "state": "Murillo",
         "country": "Bolivia",
         "coordinates": {
-          "lat": 16.101010,
-          "long": 18.101010
+          "lat": 16.10101,
+          "long": 18.1010
         },
         "company": {
           "department": "TI",
