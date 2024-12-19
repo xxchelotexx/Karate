@@ -78,7 +78,7 @@ Feature: Users
       "phone": "+591 75290331",
       "role": "courses",
       "address": {
-        "address": "calle 1",
+        "address": "calle X",
         "city": "La Paz",
         "state": "Murillo",
         "country": "Bolivia",
