@@ -88,8 +88,8 @@ Feature: Users
         },
         "company": {
           "department": "TI",
-          "name": "Technology and Teleco",
-          "title": "Test Aut Engineer"
+          "name": "Technology and Telecom",
+          "title": "Test Automation Engineer"
                     }
       }
 
