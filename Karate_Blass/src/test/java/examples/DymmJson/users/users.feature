@@ -75,7 +75,7 @@ Feature: Users
       "lastName": "Ruiz Edited 1",
       "age": 20,
       "email": "marcelo@ruiz.com",
-      "phone": "+591 76543021",
+      "phone": "+591 75290331",
       "role": "courses",
       "address": {
         "address": "calle 1",
