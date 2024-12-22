@@ -11,12 +11,14 @@ Feature: Users
     * assert responseTime < 1000
 
   Scenario: Get single product
-    
     * path 'products',2
     When method GET
     Then status 200
     * assert responseTime < 1000
-
+    * assert response.id ==2
+    * assert response.price == 19.99
+    * def reviewerName = response.reviews.find(x => x.rating ==4).reviewerName
+    * assert reviewerName == 'Liam Garcia'
 
   Scenario: delete single product
     
