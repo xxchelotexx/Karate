@@ -35,8 +35,9 @@ Feature: Users
   Scenario: sort products
     
     * path 'products'
-    * path sortBy = 'price'
-    * path orderBy = 'asc'
+    * params {"sortBy": "age","orderBy": "desc"}
+    #* path sortBy = 'price'
+    #* path orderBy = 'asc'
     When method get
     Then status 200
     * assert responseTime < 1000
