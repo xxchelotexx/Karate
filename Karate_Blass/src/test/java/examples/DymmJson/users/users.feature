@@ -26,7 +26,7 @@ Feature: Users
 
   Scenario: sort products
 
-    * path 'users',
+    * path 'users',2
     When method DELETE
     Then status 200
     * assert responseTime < 1000
