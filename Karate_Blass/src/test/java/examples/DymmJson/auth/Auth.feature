@@ -14,3 +14,5 @@ Feature: Authorization
     * assert response.lastName == "Johnson"
     * assert response.accessToken.length == 360
     * assert response.refreshToken.length == 360
+    * def schema = read("schema.json")
+    * match response == schema
