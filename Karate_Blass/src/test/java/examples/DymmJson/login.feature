@@ -4,7 +4,16 @@ Feature: Authorization
     Given url mainUrl
     * headers auth
   Scenario: Login
-    * def loginPayload = read('login.json')
+    #* def loginPayload = read('login.json')
+    * def loginPayload =
+    """
+    {
+      "username": "emilys",
+      "password": "emilyspass",
+      "expiresInMins": 30
+    }
+    """
+
     * path 'auth','login'
     * request loginPayload
     When method POST
