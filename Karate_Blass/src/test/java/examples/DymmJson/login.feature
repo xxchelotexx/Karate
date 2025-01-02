@@ -5,7 +5,6 @@ Feature: Authorization
     * headers auth
   Scenario: Login
     #* def loginPayload = read('login.json')
-
     * def loginPayload =
     """
     {
